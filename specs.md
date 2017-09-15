@@ -65,3 +65,28 @@ lastResult = add(5, lastResult);
 lastResult = multiply(3,2);
 ```
  *    Above is for testing
+
+ v.0.1.0 
+---
+```javascript
+astResult = 0000;
+
+function operateIntermediary(operation, arg1, arg2) {
+	return operation(arg1, arg2);
+};
+
+lastResult = operateIntermediary(add, 2, 4);
+lastResult = operateIntermediary(add, 5, lastResult);
+lastResult = operateIntermediary(multiply, 3,2);
+```
+*   operateIntermediary: function
+    *   operation: 1
+        *   purpose: operator
+    *   args: 2 
+        *   arg1: number 
+            *   purpose: input for arithmetic 
+        *   arg2: number 
+            *   purpose: input for arithmetic
+    *   return: the args equated using the operation
+    *   behavior:  The function will be able to take 2 numer and do arithmetic using "+","-","*" and "/" as operators.
+    *   purpose:  The funtion will be able to complete computational mathematics in Cleancalc.
