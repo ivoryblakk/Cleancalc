@@ -63,4 +63,4 @@ lastResult = operate(add, 2, 4);
 lastResult = operate(add, 5);
 lastResult = operate(multiply, 3, 2);
 ```
-In this version Cleancalc  will be able to compute even if the user inputs 1 value for the math operation. 
+In this version, Cleancalc  will be able to compute even if the user only inputs 1 value into the Cleancal input.
