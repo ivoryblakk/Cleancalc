@@ -125,6 +125,6 @@ lastResult = operate(multiply, 3, 2);
         *   return: the args equated by lastResult
     *   else: arg1 (solo)
         *   lastResult: the single arg1 is equated with lastResult instead of arg2 by using the operation function  
-    *   behavior:  The function will be able to call functions from previous versions even if arg2 is undefined
         *   return: the args equated by lastResult
+    *   behavior:  The function will be able to call functions from previous versions even if arg2 is undefined
     *   purpose:  The funtion will be able to complete computational mathematics in Cleancalc.
