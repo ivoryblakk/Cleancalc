@@ -28,3 +28,18 @@ function divide(arg1, arg2) {
 };
 ```
   The function will be able to divide 2 numbers, complete the division and return the solution.
+
+ v.0.1.0 
+---
+```javascript
+lastResult = 0000;
+
+function operateIntermediary(operation, arg1, arg2) {
+	return operation(arg1, arg2);
+};
+
+lastResult = operate(add, 2, 4);
+lastResult = operate(add, 5, lastResult);
+lastResult = operate(multiply, 3,2);
+```
+In version the Cleancalc will be a to take 1 operation and 2 agrs to complete an arithmetic problem. 
