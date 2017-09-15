@@ -81,6 +81,7 @@ lastResult = operateIntermediary(multiply, 3,2);
 ```
 *   operateIntermediary: function
     *   operation: 1
+            *   operator: "+","-","*" and "/"
         *   purpose: operator
     *   args: 2 
         *   arg1: number 
