@@ -1,6 +1,7 @@
 # Cleancalc
 
-
+v0.0.0
+---
 ```javascript
 function add(arg1, arg2) {
 	return arg1 + arg2;
@@ -64,3 +65,35 @@ lastResult = operate(add, 5);
 lastResult = operate(multiply, 3, 2);
 ```
 In this version, Cleancalc  will be able to compute even if the user only inputs 1 value into the Cleancal input.
+
+ v.1.1.0 
+ ---
+
+ ``` javascript
+ var calc = {
+  lastResult: 0,
+
+  operate: function (operation, arg1, arg2) {
+    if (arg2) {
+      this.lastResult = this[operation](arg1, arg2);
+      return this.lastResult;
+    } else {
+      this.lastResult = this[operation](arg1, this.lastResult);
+      return this.lastResult;
+    }
+  },
+  add: function (arg1, arg2) {
+    return arg1 + arg2;
+  },
+  subtract: function (arg1, arg2) {
+    return arg1 - arg2;
+  },
+  multiply: function (arg1, arg2) {
+    return arg1 * arg2;
+  },
+  divide: function (arg1, arg2) {
+    return arg1 / arg2;
+  }
+};
+```
+In this version, Cleancalc has all the functionalites of its previous verson. 
