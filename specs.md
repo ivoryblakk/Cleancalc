@@ -287,3 +287,13 @@ function divisonTester(operation) {
 divisonTester('divide');
 */
 ```
+
+console.log(
+  calc.operate(
+    process.argv[2],
+    parseInt(process.argv[3]),
+    parseInt(process.argv[4])
+  )
+);
+
+The calculator takes commandline arguments

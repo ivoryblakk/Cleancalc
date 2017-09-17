@@ -2,7 +2,7 @@
 var calc = {
   lastResult: 0,
 
-  operate: function (operation, arg1, arg2) {
+  operate: function(operation, arg1, arg2) {
     if (arg2) {
       this.lastResult = this[operation](arg1, arg2);
       return this.lastResult;
@@ -11,19 +11,20 @@ var calc = {
       return this.lastResult;
     }
   },
-  add: function (arg1, arg2) {
+  add: function(arg1, arg2) {
     return arg1 + arg2;
   },
-  subtract: function (arg1, arg2) {
+  subtract: function(arg1, arg2) {
     return arg1 - arg2;
   },
-  multiply: function (arg1, arg2) {
+  multiply: function(arg1, arg2) {
     return arg1 * arg2;
   },
-  divide: function (arg1, arg2) {
+  divide: function(arg1, arg2) {
     return arg1 / arg2;
   }
 };
+/*
 //------------operate tester  args: 2 ------------------
 function operateTester() {
   var tested = calc.operate('add', 0, 0);
@@ -97,3 +98,11 @@ function divisonTester(operation) {
   console.log(message);
 }
 divisonTester('divide');
+*/
+console.log(
+  calc.operate(
+    process.argv[2],
+    parseInt(process.argv[3]),
+    parseInt(process.argv[4])
+  )
+);

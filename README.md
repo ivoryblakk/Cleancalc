@@ -96,4 +96,8 @@ In this version, Cleancalc  will be able to compute even if the user only inputs
   }
 };
 ```
-In this version, Cleancalc has all the functionalites of its previous verson. 
+In this version, Cleancalc has all the functionalites of its previous verson.
+
+ v.1.2.0 
+ ---
+ No major changes.
